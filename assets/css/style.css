@@ -1,0 +1,252 @@
+/* ===== CSS JE ZA MOBILNU 480px ===== */
+
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --font-semi: 500;
+
+  --first-color: #1F3A44;
+  --second-color: #FFF;
+  --text-color: black;
+
+
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: var(--header-height);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*===== NAV =====*/
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  /* obavezno da ne bude proziran */
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 200;
+}
+
+.nav__logo img {
+  height: 33px;
+  width: auto;
+  position: relative;
+  bottom: 2px;
+}
+
+/* ===== HAMBURGER TOGGLE ===== */
+#nav-toggle {
+  width: 18px;
+  /* širina hamburgera */
+  height: 15px;
+  /* visina hamburgera */
+  display: flex;
+  flex-direction: column;
+  /* crtice jedna ispod druge */
+  justify-content: space-between;
+  /* razmak između crtica */
+  cursor: pointer;
+  position: relative;
+  z-index: 300;
+
+}
+
+#nav-toggle span {
+  display: block;
+  height: 3px;
+  /* debljina crtica */
+  width: 100%;
+  /* pun width toggle div-a */
+  background-color: #000;
+  /* boja crtica */
+  border-radius: 2px;
+  /* zaobljeni rubovi */
+  transition: all 0.3s ease;
+  /* za kasnije animacije */
+}
+
+.nav__menu {
+  position: fixed;
+  top: 3rem;
+  top: var(--header-height);
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--first-color);
+  transition: .5s;
+  z-index: 100;
+}
+
+.nav__item {
+  margin-bottom: 2rem;
+}
+
+.nav__link {
+  position: relative;
+  color: #fff;
+}
+
+.nav__link:hover::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 1.5rem;
+  background-color: var(--first-color);
+}
+
+.active-link::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 1.5rem;
+  background-color: var(--first-color);
+}
+
+.show {
+  right: 0;
+}
+
+/* ===== HERO ===== */
+.hero {
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero__logo {
+  height: auto;
+  /* raste unutar sekcije */
+  width: 600px;
+  object-fit: contain;
+}
+
+/* ===== SKILLS =====*/
+.equipment {
+  max-width: 1200px;
+  margin: 0 auto;
+  scroll-margin-top: calc(var(--header-height) + 1.5rem);
+}
+
+.equipment__container {
+  text-align: center;
+  display: grid;
+  margin-left: var(--mb-6);
+  margin-right: var(--mb-6);
+  gap: var(--mb-2);
+  margin-bottom: 70rem;
+}
+
+.equipment__container a {
+  display: block;
+  width: 100%;
+}
+
+.equipment__subtitle {
+  margin-bottom: var(--mb-4);
+  text-align: center;
+  color: var(--first-color);
+}
+
+.equipment__text {
+  margin: var(--mb-6);
+  text-align: center;
+}
+
+.equipment__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-1);
+  border-radius: .5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.equipment__name {
+  display: flex;
+  align-items: center;
+  color: var(--first-color);
+}
+
+/* .equipment__bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
+} */
