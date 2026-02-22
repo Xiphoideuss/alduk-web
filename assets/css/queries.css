@@ -39,6 +39,11 @@
     color: var(--text-color);
   }
 
+    /*===== NAJAM OPREME =====*/
+      .rental-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 
@@ -49,9 +54,29 @@
 
 @media screen and (min-width: 991px) {
 
-  /* ===== SKILLS ===== */
+  /* ===== HEADER ===== */
+  .hero {
+    height: 600px;
+  }
+
+  .hero__logo {
+    width: 400px;
+  }
+
+  /* ===== EQUIPMENT ===== */
   .equipment__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+
+  /* ===== PAKETI ===== */
+  .packages__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*===== NAJAM OPREME =====*/
+    .rental-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
