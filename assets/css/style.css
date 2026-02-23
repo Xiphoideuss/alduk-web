@@ -368,9 +368,10 @@ img {
 /* ===== NAJAM OPREME ===== */
 
 .page-header {
-  margin-top: var(--header-height);
+  padding-top: var(--header-height);
   text-align: center;
 }
+
 .rental {
   max-width: 1200px;
   margin: 0 auto;
@@ -379,6 +380,7 @@ img {
 
 .rental-category {
   margin-bottom: 4rem;
+  scroll-margin-top: calc(var(--header-height) + 1.5rem);
 }
 
 .rental-category__title {
