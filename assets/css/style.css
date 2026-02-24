@@ -191,7 +191,7 @@ img {
 .hero__logo {
   height: auto;
   /* raste unutar sekcije */
-  width: 200px;
+  width: 300px;
   object-fit: contain;
 }
 
