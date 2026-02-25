@@ -174,11 +174,12 @@ img {
 .hero {
   position: relative;
   max-width: 1200px;
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 3px solid green; */
 }
 
 .hero__overlay {
@@ -191,7 +192,7 @@ img {
 .hero__logo {
   height: auto;
   /* raste unutar sekcije */
-  width: 300px;
+  width: 200px;
   object-fit: contain;
 }
 
@@ -205,8 +206,8 @@ img {
 .equipment__container {
   text-align: center;
   display: grid;
-  margin-left: var(--mb-6);
-  margin-right: var(--mb-6);
+  margin-left: var(--mb-4);
+  margin-right: var(--mb-4);
   gap: var(--mb-2);
   margin-bottom: 2rem;
 }
@@ -255,7 +256,7 @@ img {
 .packages {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--mb-6) var(--mb-3);
+  padding: var(--mb-6) var(--mb-4);
   scroll-margin-top: calc(var(--header-height) + 1.5rem);
 }
 
