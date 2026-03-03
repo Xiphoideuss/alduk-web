@@ -47,7 +47,7 @@
   }
 
   /* ===== PAKETI STRANICA ===== */
-    .package {
+  .package {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -58,6 +58,7 @@
     padding-bottom: 0;
     margin-bottom: 0;
   }
+
   .package-list {
     columns: 2;
     column-gap: 3rem;
@@ -67,8 +68,24 @@
     font-size: 2.2rem;
   }
 
+  /* ===== kontakt.html ===== */
+  /* ===== KONTAKT ===== */
+  .contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
+  /* ===== o-nama.html ===== */
+  /* ===== O NAMA ===== */
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
+  .about-data {
+    max-width: 800px;
+    margin: 3rem auto 0;
+  }
 }
 
 
@@ -107,6 +124,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /* ===== paketi.html ===== */
   /* ===== PAKETI STRANICA ===== */
   .package {
     padding: 3rem 1rem;
@@ -124,5 +142,25 @@
 
   .package-price {
     font-size: 1.4rem;
+  }
+
+  /* ===== kontakt.html ===== */
+  /* ===== KONTAKT ===== */
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .contact-info {
+    max-width: 1200px;
+  }
+
+  /* ===== o-nama.html ===== */
+  /* ===== O NAMA ===== */
+  .about {
+    padding: 3rem 1rem;
+  }
+
+  .about-content p {
+    font-size: 1.05rem;
   }
 }
