@@ -196,7 +196,7 @@ img {
   object-fit: contain;
 }
 
-/* ===== SKILLS =====*/
+/* ===== EQUIPMENT =====*/
 .equipment {
   max-width: 1200px;
   margin: 0 auto;
@@ -359,14 +359,15 @@ img {
   z-index: var(--z-fixed);
 }
 
+.scroll-top.show-scroll {
+  opacity: 1;
+  visibility: visible;
+}
 
 
-
-
-
-
-
+/* ===== najam-opreme.hml ===== */
 /* ===== NAJAM OPREME ===== */
+
 
 .page-header {
   padding-top: var(--header-height);
@@ -414,4 +415,78 @@ img {
 
 .rental-item p {
   font-weight: 600;
+}
+
+/* ===== paketi.hml ===== */
+/* ===== PAKETI STRANICA ===== */
+
+.package {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.package-wrapper {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.package-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.package-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.package-subtitle {
+  margin-bottom: 0.8rem;
+  color: #555;
+}
+
+.package-price {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--first-color);
+}
+
+.package-section {
+  margin-bottom: 2rem;
+}
+
+.package-section__title {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.package-list {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.package-list li {
+  margin-bottom: 0.5rem;
+}
+
+.package-cta {
+  text-align: center;
+}
+
+.package-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.4rem;
+  background-color: var(--first-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: transform .2s ease;
+}
+
+.package-btn:hover {
+  transform: scale(1.03);
 }
