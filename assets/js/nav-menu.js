@@ -1,3 +1,6 @@
+import './scroll-top-btn.js'
+
+
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
@@ -17,13 +20,3 @@ navLink.forEach(n => n.addEventListener('click', () => {
     navMenu.classList.remove('show');
 }));
 
-/*===== SCROLL TOP =====*/
-const scrollTop = document.getElementById('scroll-top');
-window.addEventListener('scroll', () => {
-    if (window.scrollY >= 300) scrollTop.classList.add('show-scroll');
-    else scrollTop.classList.remove('show-scroll');
-});
-scrollTop.addEventListener('click', e => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
