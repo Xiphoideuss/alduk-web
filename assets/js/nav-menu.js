@@ -1,6 +1,4 @@
-import './scroll-top-btn.js'
-
-
+/*===== nav-menu.js =====*/
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),

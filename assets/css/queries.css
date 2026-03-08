@@ -40,12 +40,20 @@
     color: #000;
   }
 
+  .nav__link:hover::after {
+      background-color: var(--first-color);
+  }
+
+  .active-link::after {
+    background-color: var(--first-color);
+  }
+
 
   /*===== NAJAM OPREME =====*/
   .rental-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
+ /* ===== paketi.html ===== */
   /* ===== PAKETI STRANICA ===== */
   .package {
     display: grid;
@@ -86,6 +94,13 @@
     max-width: 800px;
     margin: 3rem auto 0;
   }
+
+  /* ===== galerija.html ===== */
+  /* ===== GALERIJA ===== */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 
@@ -98,7 +113,7 @@
 
   /* ===== HEADER ===== */
   .hero {
-    height: 500px;
+    min-height: 500px;
     margin-top: 1.5rem;
   }
 
@@ -166,5 +181,20 @@
 
   .page-title h1 {
     font-size: 2.5rem;
+  }
+
+  /* ===== galerija.html ===== */
+  /* ===== GALERIJA ===== */
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .gallery-item img {
+    transition: transform .3s ease;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.05);
   }
 }
