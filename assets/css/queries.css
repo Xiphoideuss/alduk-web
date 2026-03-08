@@ -41,7 +41,7 @@
   }
 
   .nav__link:hover::after {
-      background-color: var(--first-color);
+    background-color: var(--first-color);
   }
 
   .active-link::after {
@@ -53,7 +53,8 @@
   .rental-grid {
     grid-template-columns: repeat(2, 1fr);
   }
- /* ===== paketi.html ===== */
+
+  /* ===== paketi.html ===== */
   /* ===== PAKETI STRANICA ===== */
   .package {
     display: grid;
@@ -62,7 +63,6 @@
   }
 
   .package-wrapper {
-    border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -134,21 +134,32 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+
   /*===== NAJAM OPREME =====*/
   .rental-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .rental-item:hover {
+      transform: scale(1.03);
   }
 
   /* ===== paketi.html ===== */
   /* ===== PAKETI STRANICA ===== */
   .package {
     padding: 3rem 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .package-wrapper {
-    padding-bottom: 3rem;
-    margin-bottom: 5rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    transition: transform .3s ease;
+    scroll-margin-top: calc(var(--header-height) + 2rem);
+  }
+
+  .package-wrapper:hover {
+    transform: scale(1.03);
   }
 
   .package-header h1 {
