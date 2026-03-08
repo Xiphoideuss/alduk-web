@@ -450,7 +450,7 @@ img {
 
 .package-wrapper {
   margin: var(--mb-2);
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-6);
   padding: 1rem;
   border-radius: .75rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
