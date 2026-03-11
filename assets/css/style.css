@@ -213,7 +213,7 @@ img {
 .hero__title {
   margin-top: 2.5rem;
   font-size: var(--mb-4);
-  color:#b38608;
+  color: #b38608;
 }
 
 .hero__text {
@@ -292,7 +292,7 @@ img {
 .packages__title {
   text-align: center;
   margin-bottom: var(--mb-5);
-  color: var(--first-color);
+  color: var(--gold-color);
   font-size: var(--mb-3);
 }
 
@@ -302,7 +302,7 @@ img {
 }
 
 .packages__container h3 {
-  color: var(--first-color);
+  color: var(--gold-color);
 }
 
 .packages__container p {
@@ -329,7 +329,7 @@ img {
 
 .packages__text {
   margin-bottom: var(--mb-3);
-    font-size: var(--mb-2);
+  font-size: var(--mb-2);
 }
 
 .packages__price {
