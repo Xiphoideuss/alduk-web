@@ -492,6 +492,7 @@ img {
 
 .package-header h2 {
   color: var(--gold-color);
+  padding-bottom: var(--mb-4);
 }
 
 .package-subtitle {
