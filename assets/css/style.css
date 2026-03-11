@@ -323,7 +323,8 @@ img {
 
 .packages__name {
   margin-bottom: var(--mb-2);
-  font-size: var(--mb-2);
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .packages__text {
