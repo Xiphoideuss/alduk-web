@@ -490,6 +490,10 @@ img {
   margin-top: var(--mb-3);
 }
 
+.package-header h2 {
+  color: var(--gold-color);
+}
+
 .package-subtitle {
   margin-bottom: 0.8rem;
   color: #555;
