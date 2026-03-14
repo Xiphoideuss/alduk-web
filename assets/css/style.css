@@ -71,6 +71,24 @@ img {
   display: block;
 }
 
+/* ===== Scroll Indicator ===== */
+.progress-container {
+  width: 100%;
+  height: 1.1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(0.8rem);
+}
+
+#progress {
+  width: 0;
+  height: 100%;
+  background-color: var(--baseShade1);
+}
+
 /*===== NAV =====*/
 
 .l-header {
