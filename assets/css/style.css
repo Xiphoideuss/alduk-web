@@ -6,9 +6,9 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
-  --scroll-indicator-height: 0.5rem;
+  --scroll-indicator-height: 0.6rem;
   --font-semi: 500;
-  --smaller-font-size: 0.8rem;
+  --smaller-font-size: 1rem;
 
   --first-color: #203F4A;
   --second-color: #FFF;
