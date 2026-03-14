@@ -10,10 +10,10 @@
   --font-semi: 500;
   --smaller-font-size: 1rem;
 
-  --first-color: #203F4A;
+  --first-color: #1A2B44;
   --second-color: #FFF;
   --text-color: black;
-  --gold-color: #b38608;
+  --gold-color: #D4AF37;
 
 
   --mb-1: 0.8rem;
@@ -94,7 +94,7 @@ img {
 #progress {
   width: 0;
   height: 100%;
-  background-color: var(--first-color);
+  background-color: var(--gold-color);
 }
 
 .sticky {
@@ -229,7 +229,7 @@ img {
 .hero__logo {
   height: auto;
   /* raste unutar sekcije */
-  width: 200px;
+  width: 300px;
   object-fit: contain;
 }
 
@@ -243,7 +243,7 @@ img {
 .hero__title {
   margin-top: 2.5rem;
   font-size: var(--mb-4);
-  color: #b38608;
+  color: var(--gold-color);
 }
 
 .hero__text {
