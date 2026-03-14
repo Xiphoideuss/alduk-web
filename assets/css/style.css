@@ -86,7 +86,7 @@ img {
 #progress {
   width: 0;
   height: 100%;
-  background-color: var(--baseShade1);
+  background-color: var(--first-color);
 }
 
 /*===== NAV =====*/
