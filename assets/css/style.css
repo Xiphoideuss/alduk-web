@@ -64,6 +64,13 @@ ul {
 
 a {
   text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus,
+a:active {
+  outline: none;
 }
 
 img {
