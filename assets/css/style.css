@@ -431,6 +431,13 @@ img {
 /* ===== najam-opreme.hml ===== */
 /* ===== NAJAM OPREME ===== */
 
+.rental-note{
+  text-align:center;
+  margin:1rem auto 2rem;
+  max-width:600px;
+  font-size:0.95rem;
+  color:#555;
+}
 
 .page-header {
   padding-top: var(--header-height);
