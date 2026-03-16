@@ -40,7 +40,7 @@ html {
 }
 
 body {
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) + var(--scroll-indicator-height));
   font-family: 'Poppins', sans-serif;
 }
 
@@ -105,7 +105,7 @@ img {
 
 .l-header {
   position: fixed;
-  top: .5rem;
+  top: var(--scroll-indicator-height);
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -173,7 +173,7 @@ img {
   padding: 2rem;
   background-color: var(--first-color);
   transition: .5s;
-  z-index: 100;
+  z-index: 1100;
 }
 
 .nav__item {
@@ -256,7 +256,7 @@ img {
 .equipment {
   max-width: 1200px;
   margin: 0 auto;
-  scroll-margin-top: calc(var(--header-height) + 1.5rem);
+scroll-margin-top: calc(var(--header-height) + var(--scroll-indicator-height) + 1rem);
   margin-top: 4rem;
 }
 
