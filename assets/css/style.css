@@ -147,7 +147,6 @@ img {
   cursor: pointer;
   position: relative;
   z-index: 300;
-
 }
 
 #nav-toggle span {
@@ -163,6 +162,20 @@ img {
   transition: all 0.3s ease;
   /* za kasnije animacije */
 }
+
+/* ===== NAV SPAN ANIMACIJA ===== */
+#nav-toggle.active span:nth-child(1){
+  transform:translateY(6px) rotate(45deg);
+}
+
+#nav-toggle.active span:nth-child(2){
+  opacity:0;
+}
+
+#nav-toggle.active span:nth-child(3){
+  transform:translateY(-6px) rotate(-45deg);
+}
+
 
 .nav__menu {
   position: fixed;
@@ -797,3 +810,4 @@ img {
 .lightbox-next:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
