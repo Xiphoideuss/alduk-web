@@ -557,6 +557,16 @@ img {
   color: var(--first-color);
 }
 
+#guest-book-phone {
+  font-weight: 200;
+  font-size: .8rem;
+}
+
+#guest-book-phone strong {
+  font-weight: 700 !important;
+  padding-bottom: 3rem;
+}
+
 .package-section {
   margin-bottom: 2rem;
 }
