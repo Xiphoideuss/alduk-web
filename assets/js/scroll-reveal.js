@@ -33,11 +33,16 @@ export function revealCustom(selector, options) {
 }
 
 // SEQUENTIAL ANIMATION
-sr.reveal('.equipment__data, .packages__card, .rental-item, .package-wrapper, .gallery-item, .about-hero, .contact-item', {
+sr.reveal('.equipment__data, .packages__card, .package-wrapper, .gallery-item, .about-hero, .contact-item', {
   origin: 'left',
   distance: '50px',
-  duration: 700,
+  duration: 600,
   interval: 120
+});
+
+sr.reveal('.reveal', {
+  duration: 600,
+  delay: 0,
 });
 
 // HTML TRIGGERI
