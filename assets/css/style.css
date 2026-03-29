@@ -313,10 +313,15 @@ img {
   transition: transform .3s ease;
 }
 
-.equipment__data:hover {
-  transform: scale(1.03);
+.equipment__data {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
 }
 
+.equipment__data:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0px 10px 25px rgba(14, 36, 49, 0.2);
+}
 
 .equipment__name {
   display: flex;
@@ -325,6 +330,12 @@ img {
 }
 
 /* ===== PAKETI ===== */
+.packages__card:hover,
+.rental-item:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0px 12px 35px rgba(14, 36, 49, 0.2);
+}
+
 .packages {
   max-width: 1200px;
   margin: 0 auto;
@@ -358,10 +369,6 @@ img {
   border-radius: .75rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   transition: transform .3s ease;
-}
-
-.packages__card:hover {
-  transform: scale(1.03);
 }
 
 .packages__name {
