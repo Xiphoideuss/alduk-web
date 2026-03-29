@@ -164,16 +164,16 @@ img {
 }
 
 /* ===== NAV SPAN ANIMACIJA ===== */
-#nav-toggle.active span:nth-child(1){
-  transform:translateY(6px) rotate(45deg);
+#nav-toggle.active span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
 }
 
-#nav-toggle.active span:nth-child(2){
-  opacity:0;
+#nav-toggle.active span:nth-child(2) {
+  opacity: 0;
 }
 
-#nav-toggle.active span:nth-child(3){
-  transform:translateY(-6px) rotate(-45deg);
+#nav-toggle.active span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 
@@ -479,6 +479,7 @@ img {
 }
 
 .rental-grid {
+  align-items: start;
   display: grid;
   grid-template-columns: 1fr;
   /* 1 u redu */
@@ -505,11 +506,11 @@ img {
 
 .rental-item h3 {
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .rental-item p {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* ===== paketi.hml ===== */
@@ -557,12 +558,12 @@ img {
   color: var(--first-color);
 }
 
-#guest-book-phone {
+.rental-text {
   font-weight: 200;
   font-size: .8rem;
 }
 
-#guest-book-phone strong {
+.rental-text strong {
   font-weight: 700 !important;
 }
 
@@ -819,4 +820,3 @@ img {
 .lightbox-next:hover {
   background: rgba(0, 0, 0, 0.8);
 }
-

@@ -42,13 +42,13 @@
 
   .nav__link:hover::after {
     background-color: var(--first-color);
-    background-color: #b38608;
+    background-color: var(--gold-color);
     height: 0.18rem;
   }
 
   .active-link::after {
     background-color: var(--first-color);
-    background-color: #b38608;
+    background-color: var(--gold-color);
     height: 0.18rem;
   }
 
