@@ -295,6 +295,7 @@ img {
 }
 
 .equipment__text {
+
   margin: var(--mb-3);
   text-align: center;
   margin-bottom: 4rem;
