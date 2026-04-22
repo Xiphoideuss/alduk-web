@@ -47,7 +47,6 @@ body {
 h1 {
   font-size: 2.2rem;
   font-weight: 600;
-  color: var(--first-color);
   color: var(--gold-color);
 }
 
@@ -827,4 +826,19 @@ img {
 .lightbox-prev:hover,
 .lightbox-next:hover {
   background: rgba(0, 0, 0, 0.8);
+}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-top,
+.reveal-bottom,
+.equipment__data,
+.packages__card,
+.package-wrapper,
+.gallery-item,
+.about-hero,
+.contact-item {
+  visibility: hidden;
 }
