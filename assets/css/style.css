@@ -386,6 +386,16 @@ img {
   font-size: var(--mb-2);
 }
 
+.packages__content .cijena {
+  font-weight: 300;
+  font-size: var(--mb-1);
+}
+
+.packages__content .cijena span {
+  font-weight: 500;
+  font-size: var(--mb-2);
+}
+
 .packages__price {
   font-weight: 600;
   color: var(--first-color);
