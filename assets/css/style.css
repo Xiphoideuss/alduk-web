@@ -1,7 +1,7 @@
 /* ===== CSS JE ZA MOBILNU 480px ===== */
 
 /*===== GOOGLE FONTS =====*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -286,6 +286,10 @@ img {
   width: 100%;
 }
 
+.equipment__cijenik {
+  border: 1px solid var(--gold-color);
+}
+
 .equipment__subtitle {
   margin-bottom: var(--mb-2);
   text-align: center;
@@ -517,7 +521,13 @@ img {
 }
 
 .rental-item p {
+  font-weight: 300;
+  font-size: var(--mb-1);
+}
+
+.rental-item p span {
   font-weight: 500;
+  font-size: var(--mb-2);
 }
 
 /* ===== paketi.hml ===== */

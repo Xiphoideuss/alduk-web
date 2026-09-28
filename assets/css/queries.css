@@ -52,6 +52,13 @@
     height: 0.18rem;
   }
 
+    /* ===== EQUIPMENT ===== */
+  .equipment__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+
   /*===== NAJAM OPREME =====*/
   .rental-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -128,12 +135,7 @@
     /* border: 3px solid red; */
   }
 
-  /* ===== EQUIPMENT ===== */
-  .equipment__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: relative;
-  }
+
 
   /* ===== PAKETI ===== */
   .packages__container {
