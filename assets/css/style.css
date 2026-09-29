@@ -396,11 +396,6 @@ img {
   font-size: var(--mb-2);
 }
 
-.packages__price {
-  font-weight: 600;
-  color: var(--first-color);
-}
-
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--first-color);
@@ -583,6 +578,16 @@ img {
   font-weight: 600;
   font-size: 1.2rem;
   color: var(--first-color);
+}
+
+.package-wrapper .cijena {
+  font-weight: 300;
+  font-size: var(--mb-1);
+}
+
+.package-wrapper .cijena span {
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .rental-text {
