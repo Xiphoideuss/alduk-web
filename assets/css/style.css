@@ -1302,7 +1302,7 @@ img {
   justify-content: center;
   gap: 0.45rem;
 
-  width: 12rem;
+  width: 14rem;
   height: 2.5rem;
   padding: 0.35rem 0.5rem;
 
@@ -1320,8 +1320,8 @@ img {
 
 .painting-cta__icon {
   display: block;
-  width: 0.65rem;
-  height: 0.65rem;
+  width: 1.5rem;
+  height: 1.5rem;
   filter: brightness(0) invert(1);
 }
 
