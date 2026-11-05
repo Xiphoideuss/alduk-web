@@ -1302,12 +1302,12 @@ img {
   justify-content: center;
   gap: 0.45rem;
 
-  width: 14rem;
-  height: 2.5rem;
+  width: 15rem;
+  height: 2.7rem;
   padding: 0.35rem 0.5rem;
 
   border: 1px solid #d9a441;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   background: #172b4d;
   color: #fff;
 
@@ -1333,9 +1333,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 1.25rem;
   height: 1.5rem;
-  font-size: 1.25rem;
-  line-height: 1;
+}
+
+.painting-cta__arrow img {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
 /* ===== LIGHTBOX ===== */
