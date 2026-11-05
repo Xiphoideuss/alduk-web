@@ -1329,6 +1329,15 @@ img {
   background: #243d64;
 }
 
+.painting-cta__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
 /* ===== LIGHTBOX ===== */
 
 .lightbox {
