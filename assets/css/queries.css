@@ -3,7 +3,10 @@
 
 @media screen and (min-width: 768px) {
 
-
+  /* ===== BENEFITS ===== */
+  .painting-benefits__list {
+    grid-template-columns: repeat(8, 1fr);
+  }
 
   /* ===== EQUIPMENT ===== */
   .equipment__container {
@@ -60,16 +63,63 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
+
+  /* FOOTER */
+  /*===== FOOTER: TABLET =====*/
+
+  .footer {
+    min-height: 320px;
+    padding: 1.8rem 2rem 1.2rem;
+  }
+
+  .footer__title {
+    font-size: 1.6rem;
+  }
+
+  .footer__social {
+    gap: 2rem;
+    margin: 0.9rem 0 1.2rem;
+  }
+
+  .footer__contact-item {
+    font-size: 1.05rem;
+  }
+
+  .footer__copy {
+    margin-top: 1.7rem;
+    font-size: 1rem;
+  }
+
+  /* ===== NAŠE USLUGE ===== */
+  .painting-services__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* ===== SOBOSLIKARSKI I SUHA GRADNJA GALERIJA NA DNU STRANICE KOJA LINKA NA GALERIJU ===== */
+.painting-gallery__track {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.painting-gallery__item:nth-child(-n+3) {
+  display: block;
+}
+
+
 }
 
 /* ----- min-width: 991px ----- */
 
 @media screen and (min-width: 991px) {
 
-  /* ===== HEADER ===== */
+  /* :root {
+    --scroll-indicator-height: 0.4rem;
+  } */
+
   /*===== NAV =====*/
   .nav {
     height: calc(var(--header-height) + .5rem);
+
   }
 
   .nav__menu {
@@ -190,4 +240,132 @@
   .gallery-item img:hover {
     transform: scale(1.05);
   }
+
+  /*===== FOOTER: DESKTOP =====*/
+
+  .footer {
+    min-height: 340px;
+    padding: 2rem;
+  }
+
+  .footer__background {
+    object-fit: fill;
+  }
+
+  .footer__title {
+    font-size: 1.7rem;
+  }
+
+  .footer__social {
+    gap: 2.2rem;
+    margin: 1rem 0 1.3rem;
+  }
+
+  .footer__icon {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .footer__contact {
+    gap: 0.5rem;
+  }
+
+  .footer__contact-item {
+    font-size: 1.1rem;
+  }
+
+  .footer__copy {
+    margin-top: 2rem;
+  }
+
+  /* Footer desktop raspored */
+  .footer--desktop {
+    min-height: 160px;
+    padding: 1.5rem 1rem 1rem;
+  }
+
+  .footer--desktop .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer--desktop .footer__heading {
+    margin: 0;
+  }
+
+  /* Iste veličine kao mobilni */
+  .footer--desktop .footer__title {
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
+
+  .footer--desktop .footer__divider {
+    margin-top: 0.55rem;
+  }
+
+  .footer--desktop .footer__social {
+    gap: 1.5rem;
+    margin: 0.7rem 0 1rem;
+  }
+
+  .footer--desktop .footer__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .footer--desktop .footer__icon img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .footer--desktop .footer__contact {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer--desktop .footer__contact-item {
+    font-size: 1rem;
+    gap: 0.7rem;
+  }
+
+  .footer--desktop .footer__contact-item img {
+    width: 1.3rem;
+    height: 1.3rem;
+    flex-basis: 1.3rem;
+  }
+
+  .footer--desktop .footer__copy {
+    margin: 1.5rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  /* ===== NAŠE USLUGE ===== */
+  /* ===== SOBOSLIKARSKI I SUHA GRADNJA GALERIJA NA DNU STRANICE KOJA LINKA NA GALERIJU ===== */
+.painting-gallery__track {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+
+.painting-gallery__item:nth-child(-n+4) {
+  display: block;
+}
+}
+
+/* ----- min-width: 1200px ----- */
+
+/* @media screen and (min-width: 1232px) {
+  main  {
+      width: calc(100% - 2rem);
+  max-width: 1200px;
+  margin-inline: auto;
+
+  box-shadow:
+    -8px 0 18px -14px rgba(0, 0, 0, 0.18),
+     8px 0 18px -14px rgba(0, 0, 0, 0.18);
+  }
+} */

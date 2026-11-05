@@ -5,11 +5,11 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
-  --scroll-indicator-height: 0.6rem;
+  --scroll-indicator-height: 0.4rem;
   --font-semi: 500;
   --smaller-font-size: 1rem;
 
-  --first-color: #1A2B44;
+  --first-color: #112943;
   --second-color: #FFF;
   --text-color: black;
   --gold-color: #D4AF37;
@@ -45,13 +45,13 @@ body {
 
 h1 {
   font-size: 2.2rem;
-  font-weight: 600;
-  color: var(--gold-color);
+  font-weight: 700;
+  color: var(--first-color);
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.7rem;
+  font-weight: 700;
   color: var(--first-color);
 }
 
@@ -78,12 +78,25 @@ img {
 }
 
 /* ===== Scroll Indicator ===== */
-.progress-container {
+/* .progress-container {
   width: 100%;
   height: var(--scroll-indicator-height);
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2000;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.8rem);
+} */
+
+.progress-container {
+  width: 100%;
+  /* max-width: 1200px; */
+  height: var(--scroll-indicator-height);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2000;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(0.8rem);
@@ -96,7 +109,7 @@ img {
 }
 
 .sticky {
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.2);
 }
 
 /*===== NAV =====*/
@@ -392,8 +405,129 @@ img {
   font-size: var(--mb-2);
 }
 
-/* ===== FOOTER =====*/
+/* ===== FOOTER remake ===== */
+
+/*===== FOOTER =====*/
+
 .footer {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  min-height: 300px;
+  padding: 1.5rem 1rem 1rem;
+  color: var(--second-color);
+  text-align: center;
+  border-radius: 0;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.footer__background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.footer__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: var(--font-semi);
+  line-height: 1.25;
+}
+
+.footer__divider {
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin-top: 0.55rem;
+  background-color: var(--gold-color);
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0.7rem 0 1rem;
+}
+
+.footer__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--gold-color);
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.footer__icon img {
+  width: 1.2rem;
+  height: 1.2rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--second-color);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer__contact-item img {
+  flex: 0 0 1.3rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(70%) sepia(70%) saturate(500%) hue-rotate(5deg);
+}
+
+.footer__copy {
+  margin: 1.5rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (hover: hover) {
+  .footer__icon:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* ===== FOOTER =====*/
+/* ===== FOOTER ===== */
+
+/* .footer {
   background-color: var(--first-color);
   color: #fff;
   text-align: center;
@@ -422,7 +556,7 @@ img {
 
 .footer__copy {
   font-size: var(--smaller-font-size);
-}
+} */
 
 /* ===== SCROLL TOP BUTTON ===== */
 .scroll-top {
@@ -438,7 +572,7 @@ img {
   align-items: center;
   padding: 0.75rem;
   border-radius: 12%;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   font-size: 1.5rem;
   cursor: pointer;
   opacity: 0;
@@ -870,9 +1004,330 @@ img {
   border-radius: .5rem;
 }
 
+/* ===== soboslikarski-radovi.html ===== */
+/* ===== suha-gradnja.html ===== */
+/* ===== OBJE STRANICE IMAJU ISTE KLASE ===== */
+
+
+/* ===== HERO ===== */
+.container {
+  padding: 0 1.5rem;
+}
+
+.soboslikarski-radovi-stranica {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.painting-hero {
+  position: relative;
+  min-height: 16rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+}
+
+.painting-hero__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* ===== OVERLAY NA HERO ===== */
+.painting-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+      #fff 0%,
+      rgb(255 255 255 / 96%) 30%,
+      rgb(255 255 255 / 65%) 48%,
+      rgb(255 255 255 / 0%) 75%);
+}
+
+.painting-hero__eyebrow {
+  color: var(--gold-color);
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.painting-hero__title {
+  font-weight: 700;
+  line-height: 1;
+}
+
+.painting-hero .section-line {
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin: 0.7rem 0;
+  background-color: var(--gold-color);
+  border-radius: 2px;
+}
+
+.painting-hero__content {
+  position: relative;
+  z-index: 1;
+  padding-block: 1.5rem;
+}
+
+
+/* ===== PREDNOSTI ===== */
+.painting-benefits {
+  position: relative;
+  z-index: 1;
+  margin-top: -1rem;
+}
+
+.painting-benefits__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 20px rgb(26 43 68 / 8%);
+}
+
+.painting-benefits__item {
+  min-width: 0;
+  padding: 0.8rem 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  text-align: center;
+  color: var(--first-color);
+  font-size: 0.75rem;
+  line-height: 1.25;
+}
+
+
+
+.painting-benefits__item+.painting-benefits__item {
+  border-left: 1px solid #edf0f4;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.service-card__icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(0) saturate(100%) invert(70%) sepia(70%) saturate(500%) hue-rotate(5deg);
+}
+
 /* .button:hover {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, .15);
 } */
+
+
+/* ===== NAŠE USLUGE ===== */
+
+.section-heading__title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--first-color);
+  text-align: center;
+}
+
+.section-heading .section-line {
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin: 0.7rem auto;
+  background-color: var(--gold-color);
+  border-radius: 2px;
+}
+
+.painting-services {
+  padding: 2rem 1rem;
+}
+
+.painting-services .section-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.painting-services .section-heading__text {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.painting-services__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.service-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 20px rgb(26 43 68 / 8%);
+}
+
+.service-card__image {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.service-card__content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.service-card__icon {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(70%) sepia(70%) saturate(500%) hue-rotate(5deg);
+}
+
+.service-card__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.service-card__title {
+  margin-bottom: 0.25rem;
+  color: var(--first-color);
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.service-card__text {
+  color: var(--first-color);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.service-card__link {
+  flex-shrink: 0;
+  color: var(--first-color);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* ===== SOBOSLIKARSKI I SUHA GRADNJA GALERIJA NA DNU STRANICE KOJA LINKA NA GALERIJU ===== */
+
+.painting-gallery__track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.painting-gallery__item {
+  display: none;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.painting-gallery__item:nth-child(-n+2) {
+  display: block;
+}
+
+.painting-gallery__item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.painting-gallery__heading-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  .painting-gallery__item:hover img {
+    transform: scale(1.03);
+  }
+}
+
+/* ===== GALERIJA – STRELICA ===== */
+.painting-gallery__next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 18%);
+  z-index: 2;
+}
+
+.painting-gallery__next img {
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+/* ===== CTA – ZATRAŽITE PONUDU ===== */
+
+.painting-cta {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.painting-cta__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+
+  width: 12rem;
+  height: 2.5rem;
+  padding: 0.35rem 0.5rem;
+
+  border: 1px solid #d9a441;
+  border-radius: 0.3rem;
+  background: #172b4d;
+  color: #fff;
+
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: background-color 0.2s ease;
+}
+
+.painting-cta__icon {
+  display: block;
+  width: 0.65rem;
+  height: 0.65rem;
+  filter: brightness(0) invert(1);
+}
+
+.painting-cta__button:hover {
+  background: #243d64;
+}
 
 /* ===== LIGHTBOX ===== */
 
