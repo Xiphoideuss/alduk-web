@@ -9,18 +9,20 @@
   --font-semi: 500;
   --smaller-font-size: 1rem;
 
-  --first-color: #112943;
+  --first-color: #0a2541;
   --second-color: #FFF;
   --text-color: black;
   --gold-color: #D4AF37;
 
 
-  --mb-1: 0.8rem;
+  --mb-1: 0.75rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
+
+
 
   --z-fixed: 1000;
 }
@@ -44,15 +46,20 @@ body {
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--first-color);
+  line-height: 1;
 }
 
 h2 {
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--first-color);
+}
+
+h3 {
+  font-size: 15px;
 }
 
 
@@ -78,17 +85,6 @@ img {
 }
 
 /* ===== Scroll Indicator ===== */
-/* .progress-container {
-  width: 100%;
-  height: var(--scroll-indicator-height);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(0.8rem);
-} */
-
 .progress-container {
   width: 100%;
   /* max-width: 1200px; */
@@ -113,7 +109,6 @@ img {
 }
 
 /*===== NAV =====*/
-
 .l-header {
   position: fixed;
   top: var(--scroll-indicator-height);
@@ -206,6 +201,7 @@ img {
 .nav__link {
   position: relative;
   color: #fff;
+  font-weight: 500;
 }
 
 .nav__link::after {
@@ -286,7 +282,7 @@ img {
   display: grid;
   margin-left: var(--mb-4);
   margin-right: var(--mb-4);
-  gap: var(--mb-2);
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -320,7 +316,7 @@ img {
   position: relative;
   font-weight: var(--font-semi);
   padding: .5rem 1rem;
-  margin-bottom: var(--mb-1);
+  margin-bottom: 0;
   border-radius: .5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   transition: transform .3s ease;
@@ -873,11 +869,219 @@ img {
   margin-bottom: 0.8rem;
 }
 
+/* ===== UNIVERSAL PAGE HERO ===== */
+
+.page-hero {
+  position: relative;
+  max-width: 1200px;
+  min-height: 16rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+  background: #fff;
+}
+
+/* HERO IMAGE */
+
+.page-hero__image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  /* ===== PAGE HERO CENTRIRANJE SLIKE ===== */
+  object-position: 70% 70%;
+}
+
+.page-hero__image-soboslikarski {
+  object-position: 70% 30%;
+}
+
+/* WHITE OVERLAY */
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(90deg,
+      #fff 0%,
+      rgb(255 255 255 / 96%) 30%,
+      rgb(255 255 255 / 65%) 48%,
+      rgb(255 255 255 / 0%) 75%);
+}
+
+/* CONTENT */
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+
+  padding-block: 1.5rem;
+}
+
+/* EYEBROW */
+
+.page-hero__eyebrow {
+  color: var(--gold-color);
+  padding-bottom: 0.5rem;
+
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* TITLE */
+
+.page-hero__title {
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* DIVIDER */
+
+.page-hero__divider {
+  display: block;
+
+  width: 2.5rem;
+  height: 3px;
+
+  margin: 0.7rem 0;
+
+  background-color: var(--gold-color);
+  border-radius: 2px;
+}
+
+/* DESCRIPTION */
+
+.page-hero__text {
+  line-height: 1.4;
+}
+
+/* ===== NASLOVNA HERO ===== */
+
+/* ===== NASLOVNA HERO ===== */
+
+.page-hero__content.naslovna-hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.naslovna-hero__text-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.naslovna-hero__logo {
+  flex: 0 0 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.naslovna-hero__logo img {
+  display: block;
+  width: 100%;
+  max-width: 12rem;
+}
+
+.naslovna-hero-image {
+  object-fit: cover;
+  object-position: right center;
+  transform: scale(1.5);
+  transform-origin: right center;
+}
 
 /* ===== galerija.html ===== */
 /* ===== GALERIJA ===== */
 
-.gallery {
+.gallery-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--mb-4);
+}
+
+.gallery-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--mb-4);
+}
+
+.gallery-card {
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.gallery-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.gallery-card__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery-card__icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 54px;
+  margin: -38px auto 0;
+  background: #fff;
+  border-radius: 12px 12px 0 0;
+}
+
+*/
+/* SVG ikona */
+/* .gallery-card__icon svg {
+  width: 44px;
+  height: 44px;
+  stroke: var(--gold-color);
+}
+
+.gallery-card__content {
+  padding: var(--mb-2) var(--mb-2) var(--mb-4);
+}
+
+.gallery-card__content h2 {
+  font-size: 1.25rem;
+  color: var(--navy-color);
+  margin-bottom: var(--mb-2);
+}
+
+.gallery-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--navy-color);
+  font-size: 1.1rem;
+  text-decoration: none;
+} */
+
+/* .naslovna-hero__image {
+  object-position: right 68%;
+  transform: scale(1.55) translate(-15%, -15%);
+} */
+
+/* .gallery {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem 2rem;
@@ -900,7 +1104,7 @@ img {
   height: 220px;
   object-fit: cover;
   border-radius: .5rem;
-}
+} */
 
 /* ===== CJENIK ===== */
 
@@ -910,11 +1114,13 @@ img {
   margin-bottom: 5rem;
 }
 
+.section-title {}
+
 .grupacije__cijena {
   text-transform: uppercase;
   font-style: italic;
   margin-top: var(--mb-4);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-2);
   font-size: 1.2rem;
   margin-left: var(--mb-2);
 }
@@ -1130,8 +1336,8 @@ img {
 /* ===== NAŠE USLUGE ===== */
 
 .section-heading__title {
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-size: var(--mb-3);
+  font-weight: 600;
   line-height: 1;
   color: var(--first-color);
   text-align: center;
@@ -1206,7 +1412,7 @@ img {
 .service-card__title {
   margin-bottom: 0.25rem;
   color: var(--first-color);
-  font-size: 0.9rem;
+
   line-height: 1.25;
 }
 
@@ -1230,6 +1436,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .painting-gallery__item {
@@ -1268,11 +1475,9 @@ img {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 2rem;
   height: 2rem;
   padding: 0;
@@ -1293,7 +1498,7 @@ img {
 .painting-cta {
   display: flex;
   justify-content: center;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .painting-cta__button {
@@ -1302,7 +1507,7 @@ img {
   justify-content: center;
   gap: 0.45rem;
 
-  width: 15rem;
+  width: 25rem;
   height: 2.7rem;
   padding: 0.35rem 0.5rem;
 
@@ -1342,7 +1547,7 @@ img {
   width: 1rem;
   height: 1rem;
   object-fit: contain;
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 /* ===== LIGHTBOX ===== */

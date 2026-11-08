@@ -85,27 +85,35 @@
     </nav>
   </header>
 
-  <main class="soboslikarski-radovi-stranica">
-    <!-- HERO -->
-    <section class="painting-hero">
-      <img class="painting-hero__image" src="assets/img/soboslikarski-hero.jpg" alt="" fetchpriority="high">
+    <!-- UNIVERSAL PAGE HERO -->
+  <section class="page-hero">
 
-      <div class="painting-hero__content container">
-        <p class="painting-hero__eyebrow">PROFESIONALNI</p>
+    <img class="page-hero__image page-hero__image-soboslikarski" src="assets/img/soboslikarski-hero.jpg" alt="Primjeri naših radova"
+      fetchpriority="high">
 
-        <h1 class="painting-hero__title">
+    <div class="page-hero__content container">
+
+      <p class="page-hero__eyebrow reveal-top">
+        PROFESIONALNI
+      </p>
+
+      <h1 class="page-hero__title reveal-left">
           Soboslikarski<br>
           radovi
-        </h1>
+      </h1>
 
-        <span class="section-line" aria-hidden="true"></span>
+      <span class="page-hero__divider reveal"></span>
 
-        <p class="painting-hero__text">
+      <p class="page-hero__text reveal-bottom">
           Uređeni i svježi prostori<br>
           za ugodniji život i rad.
-        </p>
-      </div>
-    </section>
+      </p>
+
+    </div>
+    
+  </section>
+
+  <main class="soboslikarski-radovi-stranica">
 
     <!-- PREDNOSTI -->
     <section class="painting-benefits container" aria-label="Naše prednosti">
@@ -179,10 +187,6 @@
                 Bojenje unutarnjih i vanjskih površina kvalitetnim bojama.
               </p>
             </div>
-
-            <a class="service-card__link" href="#kontakt" aria-label="Više o krečenju i bojanju zidova">
-              <span aria-hidden="true">→</span>
-            </a>
           </div>
         </article>
 
@@ -199,10 +203,6 @@
                 Priprema površina za savršeno ravne zidove i stropove.
               </p>
             </div>
-
-            <a class="service-card__link" href="#kontakt" aria-label="Više o gletanju i zaglađivanju">
-              <span aria-hidden="true">→</span>
-            </a>
           </div>
         </article>
 
@@ -219,10 +219,6 @@
                 Uklanjanje neravnina i priprema za bojanje.
               </p>
             </div>
-
-            <a class="service-card__link" href="#kontakt" aria-label="Više o brušenju">
-              <span aria-hidden="true">→</span>
-            </a>
           </div>
         </article>
 
@@ -239,10 +235,6 @@
                 Bojanje drvene i metalne stolarije, vrata i prozora.
               </p>
             </div>
-
-            <a class="service-card__link" href="#kontakt" aria-label="Više o bojanju stolarije">
-              <span aria-hidden="true">→</span>
-            </a>
           </div>
         </article>
       </div>
@@ -274,11 +266,9 @@
           <img src="assets/img/bojanje-stolarije.jpg" alt="Detalj završenih soboslikarskih radova" loading="lazy">
         </a>
 
-<a class="painting-gallery__next"
-   href="galerija.html#soboslikarski"
-   aria-label="Pogledajte galeriju">
-  <img src="assets/icons/chevron-right.svg" alt="">
-</a>
+        <a class="painting-gallery__next" href="galerija.html#soboslikarski" aria-label="Pogledajte galeriju">
+          <img src="assets/icons/chevron-right.svg" alt="">
+        </a>
       </div>
     </section>
 
@@ -287,9 +277,9 @@
       <a class="painting-cta__button" href="kontakt.html">
         <img src="assets/icons/mail-envelope-regular-full.svg" alt="" class="painting-cta__icon">
         <span>Zatražite ponudu</span>
-<span class="painting-cta__arrow" aria-hidden="true">
-  <img src="assets/icons/arrow-right.svg" alt="">
-</span>
+        <span class="painting-cta__arrow" aria-hidden="true">
+          <img src="assets/icons/arrow-right.svg" alt="">
+        </span>
       </a>
     </section>
   </main>
