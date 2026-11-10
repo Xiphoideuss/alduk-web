@@ -48,12 +48,12 @@
   /* ===== o-nama.html ===== */
   /* ===== O NAMA ===== */
   .about-content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
   .about-data {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 3rem auto 0;
   }
 
@@ -114,253 +114,315 @@
   .naslovna-hero-image {
     transform: scale(1.2);
   }
-}
 
-/* ============= min-width: 991px ============= */
 
-@media screen and (min-width: 991px) {
+  /* ============= min-width: 991px ============= */
 
-  /* :root {
+  @media screen and (min-width: 991px) {
+
+    /* :root {
     --scroll-indicator-height: 0.4rem;
   } */
 
-  /*===== NAV =====*/
-  .nav {
-    height: calc(var(--header-height) + .5rem);
+    /*===== NAV =====*/
+    .nav {
+      height: calc(var(--header-height) + .5rem);
 
-  }
+    }
 
-  .nav__menu {
-    position: initial;
-    /* ili static */
-    width: auto;
-    height: auto;
-    display: block;
-    background: none;
-    padding: 0;
-    right: auto;
-    /* ukloni right: -100% */
-  }
+    .nav__menu {
+      position: initial;
+      /* ili static */
+      width: auto;
+      height: auto;
+      display: block;
+      background: none;
+      padding: 0;
+      right: auto;
+      /* ukloni right: -100% */
+    }
 
-  .nav__list {
-    display: flex;
-    padding-top: 0;
-  }
+    .nav__list {
+      display: flex;
+      padding-top: 0;
+    }
 
-  .nav__item {
-    margin-left: 1.2rem;
-    margin-bottom: 0;
-  }
+    .nav__item {
+      margin-left: 1.2rem;
+      margin-bottom: 0;
+    }
 
-  #nav-toggle {
-    display: none;
-  }
+    #nav-toggle {
+      display: none;
+    }
 
-  .nav__link,
-  .nav__link:visited {
-    color: var(--first-color);
-  }
+    .nav__link,
+    .nav__link:visited {
+      color: var(--first-color);
+    }
 
-  .nav__link::after {
-    background-color: var(--gold-color);
-    height: 0.18rem;
-  }
+    .nav__link::after {
+      background-color: var(--gold-color);
+      height: 0.18rem;
+    }
 
-  .hero {
-    margin-top: 0;
-  }
+    .hero {
+      margin-top: 0;
+    }
 
-  .hero__logo {
-    width: 400px;
-    /* border: 3px solid red; */
-  }
+    .hero__logo {
+      width: 400px;
+      /* border: 3px solid red; */
+    }
 
-
-
-  /* ===== PAKETI ===== */
-  .packages__container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-
-  /*===== NAJAM OPREME =====*/
-  .rental-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .rental-item:hover {
-    transform: scale(1.03);
-  }
-
-  /* ===== paketi.html ===== */
-  /* ===== PAKETI STRANICA ===== */
-  .package {
-    padding: 3rem 1rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .package-wrapper {
-    padding: 2rem;
-    margin-bottom: 1rem;
-    transition: transform .3s ease;
-    scroll-margin-top: calc(var(--header-height) + 2rem);
-  }
-
-  .package-wrapper:hover {
-    transform: scale(1.03);
-  }
-
-  .package-price {
-    font-size: 1.4rem;
-  }
-
-  /* ===== kontakt.html ===== */
-  /* ===== KONTAKT ===== */
-  .contact {
-    padding: 2rem 1rem;
-  }
-
-  .contact-info {
-    max-width: 1200px;
-  }
-
-  /* ===== o-nama.html ===== */
-  /* ===== O NAMA ===== */
-  .about {
-    padding: 3rem 1rem;
-  }
-
-  .about-content p {
-    font-size: 1.05rem;
-  }
-
-  /* ===== galerija.html ===== */
-
-  /* ===== UNIVERSAL PAGE HERO ===== */
-  .painting-gallery__track {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .gallery-categories {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  /* ===== GALERIJE ===== */
-
-
-  /*===== FOOTER: DESKTOP =====*/
-
-  .footer {
-    min-height: 340px;
-    padding: 2rem;
-  }
-
-  .footer__background {
-    object-fit: fill;
-  }
-
-  .footer__title {
-    font-size: 1.7rem;
-  }
-
-  .footer__social {
-    gap: 2.2rem;
-    margin: 1rem 0 1.3rem;
-  }
-
-  .footer__icon {
-    width: 2.7rem;
-    height: 2.7rem;
-  }
-
-  .footer__contact {
-    gap: 0.5rem;
-  }
-
-  .footer__contact-item {
-    font-size: 1.1rem;
-  }
-
-  .footer__copy {
-    margin-top: 2rem;
-  }
-
-  /* Footer desktop raspored */
-  .footer--desktop {
-    min-height: 160px;
-    padding: 1.5rem 1rem 1rem;
-  }
-
-  .footer--desktop .footer__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-
-  .footer--desktop .footer__heading {
-    margin: 0;
-  }
-
-  /* Iste veličine kao mobilni */
-  .footer--desktop .footer__title {
-    font-size: 1.4rem;
-    line-height: 1.25;
-  }
-
-  .footer--desktop .footer__divider {
-    margin-top: 0.55rem;
-  }
-
-  .footer--desktop .footer__social {
-    gap: 1.5rem;
-    margin: 0.7rem 0 1rem;
-  }
-
-  .footer--desktop .footer__icon {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .footer--desktop .footer__icon img {
-    width: 1.2rem;
-    height: 1.2rem;
-  }
-
-  .footer--desktop .footer__contact {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/* ===== HERO SERVICES – DESKTOP ===== */
+  .hero-services {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
 
-  .footer--desktop .footer__contact-item {
-    font-size: 1rem;
-    gap: 0.7rem;
+  .hero-service-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
   }
 
-  .footer--desktop .footer__contact-item img {
-    width: 1.3rem;
-    height: 1.3rem;
-    flex-basis: 1.3rem;
+  .hero-service-card__content {
+    display: grid;
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    column-gap: 1.25rem;
+    flex: 1;
+    min-width: 0;
   }
 
-  .footer--desktop .footer__copy {
-    margin: 1.5rem 0 0;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    white-space: nowrap;
+  .hero-service-card__icon {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    align-self: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0;
   }
 
-  /* ===== NAŠE USLUGE ===== */
-  /* ===== SOBOSLIKARSKI I SUHA GRADNJA MINI GALERIJA NA DNU STRANICE KOJA LINKA NA GALERIJU ===== */
-  .painting-gallery__track {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .hero-service-card__content h3 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
   }
 
-  .painting-gallery__item:nth-child(-n+4) {
+  .hero-service-card__line {
     display: block;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+    width: 2.5rem;
+    height: 3px;
+    margin: 0.4rem 0;
   }
-}
 
-/* ----- min-width: 1200px ----- */
+  .hero-service-card__content p {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: start;
+  }
+
+  .hero-service-card__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .hero-service-card__link img {
+    width: 1rem;
+    height: 1rem;
+      transform: translateY(2px);
+  }
+
+
+    /* ===== PAKETI ===== */
+    .packages__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /*===== NAJAM OPREME =====*/
+    .rental-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .rental-item:hover {
+      transform: scale(1.03);
+    }
+
+    /* ===== paketi.html ===== */
+    /* ===== PAKETI STRANICA ===== */
+    .package {
+      padding: 3rem 1rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .package-wrapper {
+      padding: 2rem;
+      margin-bottom: 1rem;
+      transition: transform .3s ease;
+      scroll-margin-top: calc(var(--header-height) + 2rem);
+    }
+
+    .package-wrapper:hover {
+      transform: scale(1.03);
+    }
+
+    .package-price {
+      font-size: 1.4rem;
+    }
+
+    /* ===== kontakt.html ===== */
+    /* ===== KONTAKT ===== */
+    .contact {
+      padding: 2rem 1rem;
+    }
+
+    .contact-info {
+      max-width: 1200px;
+    }
+
+    /* ===== o-nama.html ===== */
+    /* ===== O NAMA ===== */
+    .about {
+      padding: 3rem 1rem;
+    }
+
+    /* ===== galerija.html ===== */
+
+    .painting-gallery__track {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .gallery-categories {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    /*===== FOOTER: DESKTOP =====*/
+
+    .footer {
+      min-height: 340px;
+      padding: 2rem;
+    }
+
+    .footer__background {
+      object-fit: fill;
+    }
+
+    .footer__title {
+      font-size: 1.7rem;
+    }
+
+    .footer__social {
+      gap: 2.2rem;
+      margin: 1rem 0 1.3rem;
+    }
+
+    .footer__icon {
+      width: 2.7rem;
+      height: 2.7rem;
+    }
+
+    .footer__contact {
+      gap: 0.5rem;
+    }
+
+    .footer__contact-item {
+      font-size: 1.1rem;
+    }
+
+    .footer__copy {
+      margin-top: 2rem;
+    }
+
+    /* Footer desktop raspored */
+    .footer--desktop {
+      min-height: 160px;
+      padding: 1.5rem 1rem 1rem;
+    }
+
+    .footer--desktop .footer__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    .footer--desktop .footer__heading {
+      margin: 0;
+    }
+
+    /* Iste veličine kao mobilni */
+    .footer--desktop .footer__title {
+      font-size: 1.4rem;
+      line-height: 1.25;
+    }
+
+    .footer--desktop .footer__divider {
+      margin-top: 0.55rem;
+    }
+
+    .footer--desktop .footer__social {
+      gap: 1.5rem;
+      margin: 0.7rem 0 1rem;
+    }
+
+    .footer--desktop .footer__icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .footer--desktop .footer__icon img {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+
+    .footer--desktop .footer__contact {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .footer--desktop .footer__contact-item {
+      font-size: 1rem;
+      gap: 0.7rem;
+    }
+
+    .footer--desktop .footer__contact-item img {
+      width: 1.3rem;
+      height: 1.3rem;
+      flex-basis: 1.3rem;
+    }
+
+    .footer--desktop .footer__copy {
+      margin: 1.5rem 0 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+
+    /* ===== SOBOSLIKARSKI I SUHA GRADNJA MINI GALERIJA NA DNU STRANICE KOJA LINKA NA GALERIJU ===== */
+    .painting-gallery__track {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .painting-gallery__item:nth-child(-n+4) {
+      display: block;
+    }
+  }
+
+  /* ----- min-width: 1200px ----- */
