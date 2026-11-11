@@ -330,10 +330,17 @@ img {
   box-shadow: 0px 10px 25px rgba(14, 36, 49, 0.2);
 }
 
+.equipment__names {
+  min-width: 0;
+  overflow: hidden;
+}
+
 .equipment__name {
-  display: flex;
-  align-items: center;
   color: var(--first-color);
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-left: 1rem;
 }
 
