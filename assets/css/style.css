@@ -1220,7 +1220,133 @@ img {
 
 /* ===== CJENIK ===== */
 
+/* ===== HERO CJENIK ===== */
+
 .page-hero__image-cjenik {
+  object-fit: cover;
+  object-position: 80% center;
+}
+
+/* ===== CJENIK ===== */
+
+.pricing {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+  color: var(--first-color);
+}
+
+/* ZAGLAVLJE CJENIKA */
+
+.pricing__header,
+.pricing__item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 50px 65px;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.pricing__header {
+  padding: 0.8rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--gold-color);
+  background: #f5f7f9;
+}
+
+.pricing__header-text {
+  text-align: left;
+}
+
+.pricing__header-price {
+  text-align: right;
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
+/* GRUPACIJE */
+
+.grupacije__cijena {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--first-color);
+  margin-top: var(--mb-4);
+  margin-bottom: var(--mb-2);
+  margin-left: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  background: #edf2f6;
+  border-left: 3px solid var(--gold-color);
+  border-radius: 0.35rem;
+}
+
+/* STAVKE CJENIKA */
+
+.pricing__item {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid #e5e9ed;
+  background: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.pricing__item:hover {
+  background-color: #f7f9fb;
+}
+
+.pricing__text {
+  min-width: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.pricing__text p {
+  margin: 0;
+}
+
+.pricing__price {
+  width: auto;
+  min-width: 0;
+  text-align: right;
+  white-space: nowrap;
+  font-size: 0.85rem;
+}
+
+.pricing__price strong {
+  font-weight: 700;
+}
+
+/* NAPOMENA */
+
+.cijene-napomena {
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+/* GUMB */
+
+.button,
+.csv-btn {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 0.65rem 1.5rem 0.75rem;
+  background-color: var(--first-color);
+  color: #fff;
+  border: 2px solid var(--gold-color);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover,
+.csv-btn:hover {
+  background-color: #153b5d;
+}
+
+/* .page-hero__image-cjenik {
   object-fit: cover;
   object-position: 80% center;
 }
@@ -1229,7 +1355,6 @@ img {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto 5rem;
-  /* padding-inline: 1rem; */
 }
 
 .grupacije__cijena {
@@ -1244,25 +1369,9 @@ img {
 .cijene-napomena {
   text-align: center;
   margin-top: 2rem;
-}
-
-/* .pricing__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 1rem;
-  padding: 1rem;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.pricing__item .pricing__price p {
-  flex: 1;
-  font-weight: 300;
-  font-size: 0.8rem;
-  padding-top: var(--mb-1);
 } */
 
-.pricing__header,
+/* .pricing__header,
 .pricing__item {
   display: grid;
   grid-template-columns: 1fr 50px 60px;
@@ -1304,7 +1413,6 @@ img {
   text-align: right;
 }
 
-/*BUTTONS*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -1324,7 +1432,7 @@ img {
   color: #fff;
   padding: .5rem 1.5rem;
   border-radius: .5rem;
-}
+} */
 
 /* ===== soboslikarski-radovi.html ===== */
 /* ===== suha-gradnja.html ===== */

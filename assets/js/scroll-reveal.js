@@ -203,7 +203,7 @@ reveal(
 
 // CIJENE I PAKETI
 reveal(
-	'.packages__name, .packages__text, .packages__line, .hero-service-card, .cijena',
+	'.packages__name, .packages__text, .packages__line, .grupacije__cijena, .hero-service-card, .cijena',
 	{
 		scale: 0.85,
 		distance: '0px',
