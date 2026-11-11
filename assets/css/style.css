@@ -290,10 +290,6 @@ img {
   width: 100%;
 }
 
-.equipment__cijenik {
-  border: 1px solid var(--gold-color);
-}
-
 .equipment__subtitle {
   margin-bottom: var(--mb-2);
   text-align: center;
