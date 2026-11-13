@@ -1,6 +1,4 @@
-/* =========================================
-   CUSTOM SCROLL REVEAL (IntersectionObserver)
-========================================= */
+/* ===== CUSTOM SCROLL REVEAL (IntersectionObserver) ====== */
 
 const sr = (() => {
 
@@ -17,8 +15,15 @@ const sr = (() => {
 		viewFactor: 0.15
 	};
 
-	const VARS = ['--sr-x', '--sr-y', '--sr-scale', '--sr-opacity',
-		'--sr-duration', '--sr-delay', '--sr-easing'];
+	const VARS = [
+		'--sr-x',
+		'--sr-y',
+		'--sr-scale',
+		'--sr-opacity',
+		'--sr-duration',
+		'--sr-delay',
+		'--sr-easing'
+	];
 
 	function reveal(selector, options = {}) {
 
@@ -100,25 +105,29 @@ const sr = (() => {
 })();
 
 
-/* =========================================
-   GENERIC FUNCTION
-========================================= */
+/* ===== GENERIC FUNCTION ====== */
 
 function reveal(selector, options = {}) {
 	sr.reveal(selector, options);
 }
 
 
-/* =========================================
-   PRESETS
-========================================= */
+/* ===== PRESETS ===== */
 
 export function revealLeft(selector) {
-	reveal(selector, { origin: 'left', distance: '40px' });
+	reveal(selector, {
+		origin: 'left',
+		distance: '10px',
+		duration: 800,
+		easing: 'ease'
+	});
 }
 
 export function revealRight(selector) {
-	reveal(selector, { origin: 'right', distance: '40px' });
+	reveal(selector, {
+		origin: 'right',
+		distance: '40px'
+	});
 }
 
 export function revealTop(selector) {
@@ -167,30 +176,39 @@ reveal('.reveal-heading', {
 	easing: 'ease'
 });
 
+// SECTION-LINE
+reveal('.section-line', {
+	scale: 0.25,
+	duration: 800,
+	distance: '0px',
+	easing: 'ease'
+});
+
 
 // ELEMENTI SLIJEVA
 reveal(
-	'.equipment__data, .gallery-item, .contact-item',
+	'.equipment__data, .gallery-item, .contact-item, .grupacije__cijena',
 	{
 		origin: 'left',
-		distance: '100px',
+		distance: '40px',
 		duration: 400,
-		interval: 80,
-		easing: 'ease',
+		interval: 50,
+		easing: 'ease'
 	}
 );
 
-reveal('.package-wrapper', {
-  scale: 0.9,
-  distance: '0px',
-  duration: 800,
-  interval: 80,
-  easing: 'ease'
+// CONTAINER SCALE
+reveal('.package-wrapper, .packages__card, .reveal-container', {
+	scale: 0.9,
+	distance: '0px',
+	duration: 800,
+	interval: 80,
+	easing: 'ease'
 });
 
 // ELEMENTI OD DOLJE
 reveal(
-	'.reveal, .service-card',
+	'.reveal',
 	{
 		origin: 'bottom',
 		distance: '100px',
@@ -200,24 +218,15 @@ reveal(
 	}
 );
 
-
-// CIJENE I PAKETI
-reveal(
-	'.packages__name, .packages__text, .packages__line, .grupacije__cijena, .hero-service-card, .cijena',
-	{
-		scale: 0.85,
-		distance: '0px',
-		duration: 600,
-		interval: 10,
-		easing: 'ease',
-		opacity: 0,
-	}
-);
+reveal('.reveal-scale-optimized', {
+	scale: 0.85,
+	duration: 800,
+	distance: '0px',
+	easing: 'ease'
+});
 
 
-/* =========================================
-   HTML TRIGGERS
-========================================= */
+/* ===== HTML TRIGGERS ===== */
 
 revealLeft('.reveal-left');
 revealRight('.reveal-right');
