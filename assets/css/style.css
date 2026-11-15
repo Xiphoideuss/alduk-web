@@ -654,7 +654,7 @@ img {
 }
 
 .rental-category {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   margin-top: 1rem;
   scroll-margin-top: calc(var(--header-height) + 2.5rem);
 }
@@ -883,8 +883,7 @@ img {
   width: 1.5rem;
   height: 1.5rem;
   object-fit: contain;
-  filter: brightness(0) saturate(100%)
-    invert(72%) sepia(90%) saturate(1200%) hue-rotate(350deg);
+  filter: brightness(0) saturate(100%) invert(72%) sepia(90%) saturate(1200%) hue-rotate(350deg);
 }
 
 .contact-item__text {
@@ -1187,10 +1186,207 @@ img {
 }
 
 
+
+
 /* ===== galerija.html ===== */
-/* ===== GALERIJA ===== */
+
+
+/* =================================
+   GALERIJA
+================================= */
+
+
+/* =================================
+   GALERIJA – OSNOVNI STILOVI
+================================= */
 
 .gallery-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.gallery-categories {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.gallery-card {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 0.75rem;
+  color: var(--first-color);
+  background: #fff;
+  border-radius: 0.65rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.gallery-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.gallery-card__icon {
+  flex: 0 0 2rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(45%) saturate(400%) hue-rotate(7deg);
+}
+
+.gallery-card__info {
+  min-width: 0;
+}
+
+.gallery-card__info h2 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+  color: var(--first-color);
+}
+
+.gallery-card__info p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+.category-gallery {
+  width: 100%;
+  min-width: 0;
+}
+
+.category-gallery__track {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.category-gallery__item {
+  display: none;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.category-gallery__item:nth-child(-n + 2) {
+  display: block;
+}
+
+.category-gallery__item img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.gallery-card__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: var(--first-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.gallery-card__link img {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+}
+
+@media (hover: hover) {
+  .gallery-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .category-gallery__item img {
+    transition: transform 0.35s ease;
+  }
+
+  .gallery-card:hover .category-gallery__item img {
+    transform: scale(1.03);
+  }
+}
+
+
+
+
+/* ===== UNIVERZALNE MINI GALERIJE ===== */
+
+/* .category-gallery__track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.category-gallery__item {
+  display: none;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.category-gallery__item:nth-child(-n+2) {
+  display: block;
+}
+
+.category-gallery__item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-gallery__next {
+  position: absolute;
+  top: 50%;
+  right: 0.4rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 18%);
+  z-index: 2;
+}
+
+.category-gallery__next img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+@media (hover: hover) {
+  .category-gallery__item:hover img {
+    transform: scale(1.03);
+  }
+} */
+
+
+
+/* ===== GALERIJA ===== */
+
+/* .gallery-page {
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--mb-4);
@@ -1209,22 +1405,22 @@ img {
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-}
+} */
 
-.gallery-card__image {
+/* .gallery-card__image {
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-}
+} */
 
-.gallery-card__image img {
+/* .gallery-card__image img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-}
+} */
 
-.gallery-card__icon {
+/* .gallery-card__icon {
   position: relative;
   z-index: 1;
   display: flex;
@@ -1235,7 +1431,7 @@ img {
   margin: -38px auto 0;
   background: #fff;
   border-radius: 12px 12px 0 0;
-}
+} */
 
 
 /* SVG ikona */
@@ -1825,7 +2021,7 @@ img {
   filter: brightness(0) invert(1);
 }
 
-.painting-cta__button > span:nth-child(2) {
+.painting-cta__button>span:nth-child(2) {
   transform: translateY(-1px);
 }
 
