@@ -187,7 +187,7 @@ reveal('.section-line', {
 
 // ELEMENTI SLIJEVA
 reveal(
-	'.equipment__data, .gallery-item, .contact-item, .grupacije__cijena, .gallery-card .category-gallery__item, .about-list li',
+	'.equipment__data, .contact-item, .grupacije__cijena, .gallery-card .category-gallery__item, .about-list li',
 	{
 		origin: 'left',
 		distance: '40px',
@@ -225,6 +225,17 @@ reveal('.reveal-scale-optimized', {
 	easing: 'ease'
 });
 
+  /* ===== UNIVERZALNE child GALERIJE ===== */
+reveal(
+	'.gallery-item',
+	{
+		origin: 'bottom',
+		distance: '50px',
+		duration: 800,
+		interval: 80,
+		easing: 'ease',
+	}
+);
 
 /* ===== HTML TRIGGERS ===== */
 
