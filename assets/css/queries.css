@@ -1,3 +1,25 @@
+@media screen and (min-width: 575px) {
+
+  .category-gallery__track {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .category-gallery__item:nth-child(-n + 3) {
+    display: block;
+  }
+
+  .category-gallery__item:nth-child(n + 4) {
+    display: none;
+  }
+
+  .category-gallery__item img {
+    height: 180px;
+  }
+
+}
+
+
+
 /*  ----- min-width: 768px ----- */
 
 @media screen and (min-width: 768px) {
@@ -21,6 +43,11 @@
 
   /* ===== paketi.html ===== */
   /* ===== PAKETI STRANICA ===== */
+
+   /* ===== PAKETI ===== */
+  .packages__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .package {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -46,14 +73,30 @@
 
   /* ===== o-nama.html ===== */
   /* ===== O NAMA ===== */
-  .about-content {
-    max-width: 1200px;
-    margin: 0 auto;
+  .about {
+    padding: 2.5rem 1.5rem;
   }
 
-  .about-data {
-    max-width: 1200px;
-    margin: 3rem auto 0;
+  .about-intro__image img {
+    height: 300px;
+  }
+
+  .about-advantages__grid {
+    gap: 1rem;
+  }
+
+  .about-advantage {
+    padding: 1rem 0.5rem;
+  }
+
+  .about-data__content {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-data__image img {
+    height: 220px;
   }
 
   /* ===== galerija.html ===== */
@@ -82,15 +125,6 @@
   .category-gallery__item:nth-child(-n+3) {
     display: block;
   }
-
-  /* ===== GALERIJA HERO ===== */
-
-
-
-  /* .gallery-categories {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--mb-4);
-  } */
 
   /*===== FOOTER: TABLET =====*/
 
@@ -182,32 +216,37 @@
 
   /* ===== KONTAKT ===== */
 
-  .contact {
-    grid-template-columns: 0.9fr 1.6fr;
-    align-items: stretch;
-    gap: 1rem;
-    padding: 1rem;
-  }
+.contact {
+  grid-template-columns: 0.9fr 1.6fr;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1rem;
+}
 
-  .contact-info {
-    gap: 0.7rem;
-  }
+.contact-info {
+  gap: 0.7rem;
+  max-width: none;
+  margin: 0;
+}
 
-  .contact-item {
-    padding: 0.8rem 1rem;
-  }
+.contact-map {
+  height: auto;
+  min-height: 0;
+  margin-bottom: 0;
+  position: relative;
+}
 
-  .contact-map {
-    min-height: 350px;
-    height: 100%;
-  }
+.contact-map .map-link {
+  position: absolute;
+  inset: 0;
+}
 
-  .contact-map iframe {
-    width: 100%;
-    height: 100%;
-    min-height: 350px;
-  }
-
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
 }
 
 /* =================================== 
@@ -341,9 +380,7 @@ min-width: 991px
 
   /* ===== EQUIPMENT ===== */
   .equipment__container {
-
     grid-template-columns: repeat(3, 1fr);
-
   }
 
 
@@ -390,19 +427,71 @@ min-width: 991px
     padding: 2rem 1rem;
   }
 
-  .contact-info {
-    max-width: 1200px;
-  }
-
   /* ===== o-nama.html ===== */
   /* ===== O NAMA ===== */
   .about {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .about-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-content h2 {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+
+  .about-content .about-divider {
+    margin-left: 0;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+
+  .about-intro__image img {
+    height: 380px;
+  }
+
+  .about-advantages {
+    margin-top: 1.5rem;
+  }
+
+  .about-advantages h2,
+  .about-data h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-advantages__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .about-advantage {
+    min-height: 130px;
+  }
+
+  .about-data__content {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 3rem;
+  }
+
+  .about-data__image img {
+    height: 180px;
+  }
+
+  .about-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+    row-gap: 1rem;
   }
 
   /* ===== galerija.html ===== */
-
-
 
 
   /* =================================
@@ -548,8 +637,5 @@ min-width: 991px
   .painting-gallery__item:nth-child(-n+4) {
     display: block;
   }
-
-
-
 
 }

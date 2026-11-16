@@ -187,7 +187,7 @@ reveal('.section-line', {
 
 // ELEMENTI SLIJEVA
 reveal(
-	'.equipment__data, .gallery-item, .contact-item, .grupacije__cijena',
+	'.equipment__data, .gallery-item, .contact-item, .grupacije__cijena, .gallery-card .category-gallery__item, .about-list li',
 	{
 		origin: 'left',
 		distance: '40px',
@@ -198,7 +198,7 @@ reveal(
 );
 
 // CONTAINER SCALE
-reveal('.package-wrapper, .packages__card, .reveal-container', {
+reveal('.package-wrapper, .packages__card, .reveal-container, .about-advantage', {
 	scale: 0.9,
 	distance: '0px',
 	duration: 800,
